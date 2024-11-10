@@ -1,0 +1,158 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   ECourses - About
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-100">
+  <header class="bg-blue-600 text-white p-4">
+   <div class="container mx-auto flex justify-between items-center">
+    <h1 class="text-2xl font-bold">
+     ECourses
+    </h1>
+    <nav>
+     <div class="md:hidden">
+      <button class="text-white focus:outline-none" id="menu-button">
+       <i class="fas fa-bars">
+       </i>
+      </button>
+     </div>
+     <ul class="hidden md:flex space-x-4" id="menu">
+      <li>
+       <a class="hover:underline" href="index.html">
+        Home
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="courses.html">
+        Courses
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="about.html">
+        About
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="contact.html">
+        Contact
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="login.html">
+        Login
+       </a>
+      </li>
+     </ul>
+    </nav>
+   </div>
+   <div class="md:hidden" id="mobile-menu" style="display: none;">
+    <ul class="space-y-2 mt-4">
+     <li>
+      <a class="block text-white hover:underline" href="index.html">
+       Home
+      </a>
+     </li>
+     <li>
+      <a class="block text-white hover:underline" href="courses.html">
+       Courses
+      </a>
+     </li>
+     <li>
+      <a class="block text-white hover:underline" href="about.html">
+       About
+      </a>
+     </li>
+     <li>
+      <a class="block text-white hover:underline" href="contact.html">
+       Contact
+      </a>
+     </li>
+     <li>
+      <a class="block text-white hover:underline" href="login.html">
+       Login
+      </a>
+     </li>
+    </ul>
+   </div>
+  </header>
+  <main class="container mx-auto mt-8">
+   <section class="bg-white p-6 rounded-lg shadow-lg">
+    <h2 class="text-2xl font-bold mb-4">
+     About ECourses
+    </h2>
+    <p class="text-gray-600 mb-4">
+     ECourses is a leading online learning platform dedicated to providing high-quality education to students around the world. Our mission is to make education accessible and affordable for everyone, regardless of their location or background.
+    </p>
+    <p class="text-gray-600 mb-4">
+     We offer a wide range of courses in various fields, including data science, web development, mobile app development, cybersecurity, cloud computing, and artificial intelligence. Our courses are designed by industry experts and are updated regularly to ensure that our students receive the most relevant and up-to-date knowledge.
+    </p>
+    <p class="text-gray-600 mb-4">
+     At ECourses, we believe in the power of education to transform lives. We are committed to helping our students achieve their goals and reach their full potential. Join us today and start your learning journey with ECourses.
+    </p>
+   </section>
+   <section class="bg-white p-6 rounded-lg shadow-lg mt-8">
+    <h2 class="text-2xl font-bold mb-4">
+     Our Team
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+     <div class="bg-gray-200 p-4 rounded-lg shadow-md">
+      <img alt="Team member 1: A smiling person with short hair and glasses" class="w-full h-40 object-cover rounded-lg mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/DsjVhtRtWkLuLtXp0JaDs96pLyeq0qi3wISEAS2TAvYlsp3JA.jpg" width="300"/>
+      <h3 class="text-xl font-semibold mb-2">
+       John Doe
+      </h3>
+      <p class="text-gray-600">
+       CEO &amp; Founder
+      </p>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="bg-blue-600 text-white p-4 mt-8">
+   <div class="container mx-auto text-center">
+    <p>
+     © 2023 ECourses. All rights reserved.
+    </p>
+    <div class="flex justify-center space-x-4 mt-2">
+     <a class="hover:text-gray-300" href="about.html">
+      <i class="fab fa-facebook-f">
+      </i>
+     </a>
+     <a class="hover:text-gray-300" href="about.html">
+      <i class="fab fa-twitter">
+      </i>
+     </a>
+     <a class="hover:text-gray-300" href="about.html">
+      <i class="fab fa-linkedin-in">
+      </i>
+     </a>
+     <a class="hover:text-gray-300" href="about.html">
+      <i class="fab fa-instagram">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script>
+   document.getElementById('menu-button').addEventListener('click', function() {
+        var menu = document.getElementById('mobile-menu');
+        if (menu.style.display === 'none' || menu.style.display === '') {
+            menu.style.display = 'block';
+        } else {
+            menu.style.display = 'none';
+        }
+    });
+  </script>
+ </body>
+</html>
